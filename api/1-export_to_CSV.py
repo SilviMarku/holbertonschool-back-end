@@ -25,4 +25,3 @@ if __name__ == "__main__":
         for i, todo in enumerate(user_todos):
             first = f'"{user_id}","{user_name}",'
             csv.write(f'{first}"{todo["completed"]}","{todo["title"]}"\n')
-    
