@@ -12,12 +12,12 @@ from sys import argv
 
 if __name__ == "__main__":
     URL = "https://jsonplaceholder.typicode.com/"
-    user_id = int(argv[1])
+    user_id = argv[1]
     res = requests.get(f"{URL}users/{argv[1]}")
-    data = res.json()
-    user_name = data.get("name")
+    res = res.json()
+    user_name = res['name']
 
-    res = requests.get(f"{URL}/todos")
+    res = requests.get(f"{URL}todos")
     all_todos = res.json()
     user_todos = [todo for todo in all_todos if todo['userId'] == int(argv[1])]
     nr_tasks = len(user_todos)
@@ -29,4 +29,3 @@ if __name__ == "__main__":
     print(f" with tasks({len(completed_tasks)}/{nr_tasks}):")
     for title in completed_title:
         print(f"\t {title}")
-    
