@@ -33,3 +33,4 @@ Function Name: Use "snake_case" (e.g., my_function).
 Constant Name: Use "UPPER_CASE_WITH_UNDERSCORES" (e.g., MAX_VALUE).
 Significance of CapWords or CamelCase in Python
 Using CapWords or CamelCase for class names in Python distinguishes them from other identifiers. It promotes readability, consistency, and is a cultural convention within the Python community, aiding quick identification of classes in a codebase.
+
