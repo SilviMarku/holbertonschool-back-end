@@ -30,4 +30,3 @@ if __name__ == "__main__":
     for title in completed_title:
         print(f"\t {title}")
     
-
